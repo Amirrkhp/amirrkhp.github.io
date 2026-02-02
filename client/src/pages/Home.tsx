@@ -352,7 +352,6 @@ export default function Home() {
               <div className="flex gap-4">
                 {/* Social placeholders */}
                 <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">IG</div>
-                <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">LI</div>
                 <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">FB</div>
               </div>
             </div>
