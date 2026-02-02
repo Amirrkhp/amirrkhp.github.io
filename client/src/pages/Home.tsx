@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/navbar";
 import { LeadForm } from "@/components/lead-form";
-import { MapPin, Building2, TrendingUp, Home as HomeIcon, CheckCircle2, Star, Award, Briefcase } from "lucide-react";
+import { MapPin, Building2, TrendingUp, Home as HomeIcon, CheckCircle2, Star, Award, Briefcase, Instagram } from "lucide-react";
 import profilePic from "@assets/K_Amir-6_1770004657259.jpg";
 
 // Animations
@@ -105,7 +105,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-secondary/30 rounded-2xl transform rotate-3" />
               <img 
                 src={profilePic}
-                alt="K. Amir - Real Estate Agent" 
+                alt="Amir K. - Real Estate Agent" 
                 className="relative rounded-xl shadow-2xl w-full aspect-[3/4] object-cover object-top"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100 hidden md:block">
@@ -241,7 +241,7 @@ export default function Home() {
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">Areas I Serve</h2>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">Areas I Serve</h2>
               <p className="text-gray-300 text-lg mb-8 leading-relaxed">
                 Based in Southern California, I provide specialized local knowledge across diverse neighborhoods. Whether you want the coastal lifestyle of OC or the rapid growth of the Inland Empire, I have you covered.
               </p>
@@ -257,7 +257,7 @@ export default function Home() {
                       <MapPin className="text-secondary" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold mb-1">{area.name}</h4>
+                      <h4 className="text-xl font-bold mb-1 text-white">{area.name}</h4>
                       <p className="text-gray-400 text-sm">{area.desc}</p>
                     </div>
                   </div>
@@ -322,8 +322,8 @@ export default function Home() {
 
                   <div className="mt-12 pt-8 border-t border-white/20">
                     <p className="text-sm text-gray-300 mb-2">Direct Contact:</p>
-                    <a href="tel:+15551234567" className="block text-xl font-bold hover:text-secondary transition-colors">(555) 123-4567</a>
-                    <a href="mailto:contact@kamir.com" className="block text-lg hover:text-secondary transition-colors mt-1">contact@kamir.com</a>
+                    <a href="tel:+19493719679" className="block text-xl font-bold hover:text-secondary transition-colors">(949) 371-9679</a>
+                    <a href="mailto:contact@amirkrealestate.com" className="block text-lg hover:text-secondary transition-colors mt-1">contact@amirkrealestate.com</a>
                   </div>
                 </div>
               </div>
@@ -343,16 +343,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-white text-gray-900 rounded-sm flex items-center justify-center font-bold font-heading">KA</div>
-                <span className="text-white font-bold text-xl font-heading">K. AMIR</span>
+                <div className="w-8 h-8 bg-white text-gray-900 rounded-sm flex items-center justify-center font-bold font-heading">AK</div>
+                <span className="text-white font-bold text-xl font-heading">AMIR K.</span>
               </div>
               <p className="text-sm max-w-xs mb-6">
                 Dedicated to providing exceptional service and expertise for all your real estate needs in Southern California.
               </p>
               <div className="flex gap-4">
-                {/* Social placeholders */}
-                <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">IG</div>
-                <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer">FB</div>
+                <a 
+                  href="https://www.instagram.com/therealtor_amir/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors cursor-pointer"
+                  data-testid="link-instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
               </div>
             </div>
             
@@ -371,13 +377,13 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white">DRE #01234567</a></li>
+                <li><a href="#" className="hover:text-white">DRE #02367060</a></li>
                 <li><a href="#" className="hover:text-white">Fair Housing Notice</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-xs">
-            <p>&copy; {new Date().getFullYear()} K. Amir Real Estate. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Amir K. Real Estate. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -34,10 +34,10 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group cursor-pointer">
             <div className="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-sm font-heading font-bold text-xl group-hover:bg-primary/90 transition-colors">
-              KA
+              AK
             </div>
             <div className={`flex flex-col ${isScrolled ? "text-primary" : "text-white drop-shadow-md"}`}>
-              <span className="font-heading font-bold text-lg leading-none">K. AMIR</span>
+              <span className="font-heading font-bold text-lg leading-none">AMIR K.</span>
               <span className="text-[10px] uppercase tracking-widest font-medium opacity-90">Real Estate</span>
             </div>
           </Link>
@@ -89,11 +89,11 @@ export function Navbar() {
             </button>
           ))}
           <div className="pt-4 border-t flex flex-col gap-3">
-             <a href="tel:+15551234567" className="flex items-center gap-2 text-sm text-gray-600 px-4">
-                <Phone className="h-4 w-4" /> (555) 123-4567
+             <a href="tel:+19493719679" className="flex items-center gap-2 text-sm text-gray-600 px-4">
+                <Phone className="h-4 w-4" /> (949) 371-9679
              </a>
-             <a href="mailto:contact@kamir.com" className="flex items-center gap-2 text-sm text-gray-600 px-4">
-                <Mail className="h-4 w-4" /> contact@kamir.com
+             <a href="mailto:contact@amirkrealestate.com" className="flex items-center gap-2 text-sm text-gray-600 px-4">
+                <Mail className="h-4 w-4" /> contact@amirkrealestate.com
              </a>
           </div>
         </div>
