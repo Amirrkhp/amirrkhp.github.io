@@ -1,17 +1,16 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertLeadSchema, type InsertLead } from "@shared/schema";
-import { useCreateLead } from "@/hooks/use-leads";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
+import { Mail } from "lucide-react";
+
+const EMAIL_ADDRESS = "therealty.amir@gmail.com";
 
 export function LeadForm() {
-  const mutation = useCreateLead();
-  
   const form = useForm<InsertLead>({
     resolver: zodResolver(insertLeadSchema),
     defaultValues: {
@@ -24,9 +23,12 @@ export function LeadForm() {
   });
 
   const onSubmit = (data: InsertLead) => {
-    mutation.mutate(data, {
-      onSuccess: () => form.reset(),
-    });
+    const subject = encodeURIComponent(`New Inquiry from ${data.name}`);
+    const body = encodeURIComponent(
+      `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nIntent: ${data.intent || "Not specified"}\n\nMessage:\n${data.message}`
+    );
+    window.location.href = `mailto:${EMAIL_ADDRESS}?subject=${subject}&body=${body}`;
+    form.reset();
   };
 
   return (
@@ -128,16 +130,9 @@ export function LeadForm() {
             type="submit" 
             size="lg"
             className="w-full text-lg font-semibold py-6 shadow-lg shadow-primary/20 hover:shadow-xl transition-all"
-            disabled={mutation.isPending}
           >
-            {mutation.isPending ? (
-              <>
-                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                Sending...
-              </>
-            ) : (
-              "Send Message"
-            )}
+            <Mail className="mr-2 h-5 w-5" />
+            Send Message
           </Button>
         </form>
       </Form>
