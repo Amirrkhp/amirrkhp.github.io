@@ -26,7 +26,6 @@ export default function Home() {
   return (
     <div className="min-h-screen font-body">
       <Navbar />
-
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center pt-20">
         {/* Background Image with Overlay */}
@@ -90,7 +89,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ABOUT SECTION */}
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -149,7 +147,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* SERVICES SECTION */}
       <section id="services" className="py-20 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -232,7 +229,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* SERVICE AREAS */}
       <section id="areas" className="py-20 bg-primary text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -mr-20 -mt-20" />
@@ -276,7 +272,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* CONTACT SECTION */}
       <section id="contact" className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -306,7 +301,7 @@ export default function Home() {
                     <div className="flex gap-3">
                       <div className="mt-1"><TrendingUp className="w-5 h-5 text-secondary" /></div>
                       <div>
-                        <h4 className="font-bold">Data-Driven</h4>
+                        <h4 className="font-bold text-[#ffffff]">Data-Driven</h4>
                         <p className="text-sm text-gray-300 mt-1">Decisions backed by comprehensive market analysis.</p>
                       </div>
                     </div>
@@ -336,7 +331,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* FOOTER */}
       <footer className="bg-gray-900 text-gray-400 py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
