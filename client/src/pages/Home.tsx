@@ -309,7 +309,7 @@ export default function Home() {
                     <div className="flex gap-3">
                       <div className="mt-1"><CheckCircle2 className="w-5 h-5 text-secondary" /></div>
                       <div>
-                        <h4 className="font-bold">Seamless Process</h4>
+                        <h4 className="font-bold text-[#f5f6f7]">Seamless Process</h4>
                         <p className="text-sm text-gray-300 mt-1">From contract to keys, I handle the heavy lifting for you.</p>
                       </div>
                     </div>
