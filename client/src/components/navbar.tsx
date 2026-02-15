@@ -92,8 +92,8 @@ export function Navbar() {
              <a href="tel:+19493719679" className="flex items-center gap-2 text-sm text-gray-600 px-4">
                 <Phone className="h-4 w-4" /> (949) 371-9679
              </a>
-             <a href="mailto:contact@amirkrealestate.com" className="flex items-center gap-2 text-sm text-gray-600 px-4">
-                <Mail className="h-4 w-4" /> contact@amirkrealestate.com
+             <a href="mailto:therealty.amir@gmail.com" className="flex items-center gap-2 text-sm text-gray-600 px-4">
+                <Mail className="h-4 w-4" /> therealty.amir@gmail.com
              </a>
           </div>
         </div>

@@ -323,7 +323,7 @@ export default function Home() {
                   <div className="mt-12 pt-8 border-t border-white/20">
                     <p className="text-sm text-gray-300 mb-2">Direct Contact:</p>
                     <a href="tel:+19493719679" className="block text-xl font-bold hover:text-secondary transition-colors">(949) 371-9679</a>
-                    <a href="mailto:contact@amirkrealestate.com" className="block text-lg hover:text-secondary transition-colors mt-1">contact@amirkrealestate.com</a>
+                    <a href="mailto:therealty.amir@gmail.com" className="block text-lg hover:text-secondary transition-colors mt-1">therealty.amir@gmail.com</a>
                   </div>
                 </div>
               </div>
@@ -340,7 +340,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-gray-900 text-gray-400 py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 bg-white text-gray-900 rounded-sm flex items-center justify-center font-bold font-heading">AK</div>
@@ -369,16 +369,6 @@ export default function Home() {
                 <li><button onClick={() => document.getElementById('services')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-white">Services</button></li>
                 <li><button onClick={() => document.getElementById('areas')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-white">Areas Served</button></li>
                 <li><button onClick={scrollToContact} className="hover:text-white">Contact</button></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="text-white font-bold mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white">DRE #02367060</a></li>
-                <li><a href="#" className="hover:text-white">Fair Housing Notice</a></li>
               </ul>
             </div>
           </div>
