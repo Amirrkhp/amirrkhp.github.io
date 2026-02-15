@@ -337,7 +337,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-white text-gray-900 rounded-sm flex items-center justify-center font-bold font-heading">AK</div>
+                <img 
+                  src="/profile.jpg" 
+                  alt="Amir K. Logo" 
+                  className="w-10 h-10 rounded-sm object-cover border border-white/20"
+                />
                 <span className="text-white font-bold text-xl font-heading">AMIR K.</span>
               </div>
               <p className="text-sm max-w-xs mb-6">

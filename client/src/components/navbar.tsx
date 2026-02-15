@@ -33,9 +33,11 @@ export function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-            <div className="w-10 h-10 bg-primary text-white flex items-center justify-center rounded-sm font-heading font-bold text-xl group-hover:bg-primary/90 transition-colors">
-              AK
-            </div>
+            <img 
+              src="/profile.jpg" 
+              alt="Amir K. Logo" 
+              className="w-10 h-10 rounded-sm object-cover border-2 border-white/20 group-hover:border-white transition-colors"
+            />
             <div className={`flex flex-col ${isScrolled ? "text-primary" : "text-white drop-shadow-md"}`}>
               <span className="font-heading font-bold text-lg leading-none">AMIR K.</span>
               <span className="text-[10px] uppercase tracking-widest font-medium opacity-90">Real Estate</span>
