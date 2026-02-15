@@ -293,7 +293,7 @@ export default function Home() {
                     <div className="flex gap-3">
                       <div className="mt-1"><Star className="w-5 h-5 text-secondary" /></div>
                       <div>
-                        <h4 className="font-bold">Client-First Approach</h4>
+                        <h4 className="font-bold text-[#f5f7fa]">Client-First Approach</h4>
                         <p className="text-sm text-gray-300 mt-1">I prioritize your timeline and financial goals above all else.</p>
                       </div>
                     </div>
