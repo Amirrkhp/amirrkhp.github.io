@@ -47,9 +47,6 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-block px-3 py-1 mb-4 border border-white/30 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium tracking-wide">
-                Premier Southern California Real Estate
-              </div>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 Helping Buyers & Sellers <span className="text-secondary italic">Win</span> in This Market
               </h1>
@@ -340,7 +337,7 @@ export default function Home() {
                 <img 
                   src="/profile.jpg" 
                   alt="Amir K. Logo" 
-                  className="w-10 h-10 rounded-sm object-cover border border-white/20"
+                  className="w-10 h-10 rounded-sm object-cover object-[center_30%] border border-white/20"
                 />
                 <span className="text-white font-bold text-xl font-heading">AMIR K.</span>
               </div>

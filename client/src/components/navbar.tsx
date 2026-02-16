@@ -36,7 +36,7 @@ export function Navbar() {
             <img 
               src="/profile.jpg" 
               alt="Amir K. Logo" 
-              className="w-10 h-10 rounded-sm object-cover border-2 border-white/20 group-hover:border-white transition-colors"
+              className="w-10 h-10 rounded-sm object-cover object-[center_30%] border-2 border-white/20 group-hover:border-white transition-colors"
             />
             <div className={`flex flex-col ${isScrolled ? "text-primary" : "text-white drop-shadow-md"}`}>
               <span className="font-heading font-bold text-lg leading-none">AMIR K.</span>
@@ -46,7 +46,7 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {["About", "Services", "Areas", "Testimonials"].map((item) => (
+            {["About", "Services", "Areas"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -81,7 +81,7 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg border-t md:hidden flex flex-col p-4 space-y-4 animate-in slide-in-from-top-5">
-          {["About", "Services", "Areas", "Testimonials", "Contact"].map((item) => (
+          {["About", "Services", "Areas", "Contact"].map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item.toLowerCase())}
