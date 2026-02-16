@@ -41,6 +41,7 @@ jobs:
           cp client/public/profile.jpg dist/public/
           cp client/public/_redirects dist/public/
           cp client/public/200.html dist/public/
+          cp client/public/favicon.png dist/public/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
